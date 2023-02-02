@@ -8,6 +8,20 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <script src="https://kit.fontawesome.com/98585e0dc9.js" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,400;1,500;1,700;1,800&family=Sacramento&display=swap" rel="stylesheet">
+      <style>
+        .animated-mountain {
+          animation: slide-in 3s forwards;
+        }
+
+        @keyframes slide-in {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0%);
+          }
+        }
+  </style>
   </head>
   <body>
     <div class="top">
@@ -16,13 +30,13 @@
       <h2>a <span class="pro">pro</span>grammer</h2>
 
       <img class="bottom-cloud"src="cloud.png" alt="cloud image">
-      <img src="mountain.png" alt="mountain image">
+      <img src="mountain.png" alt="mountain image" class="animated-mountain">
     </div>
     <div class="middle-container">
       <div class="profile">
         <img src="circle-cropped.png" alt="Tamaghna">
         <h2>Hello.</h2>
-        <p class="intro">I am an iOS and Web Developer.I am the founder and the CTO of the Ryzen Tech.I &#128151 to drink coffee and sketch regularly;</p>
+        <p class="intro">I am a London based Web Developer. I love to do free-lancing and come up with innovative website and webpage designs and work with various clients in making their websites more interactive and attractive. I &#128151 to drink coffee and sketch regularly;</p>
       </div>
       <hr>
       <div class="skills">
@@ -41,12 +55,30 @@
           <p>Charles Le Brun and Kathe Kollwitz are my inspiration.</p>
         </div>
       </div>
+
+      <div class="bio">
+        <h2>Biography.</h2>
+        <div class="bio-row">
+          <h3>Undergrad</h3>
+          <img class="code-img" src="https://media.giphy.com/media/fhAwk4DnqNgw8/giphy.gif" alt="ug">
+
+          <p>West Bengal University Trust[2017]</p>
+          <p>B.tech in Computer Science</p>
+        </div>
+        <div class="bio-row">
+          <h3>Postgrad</h3>
+          <img class="codec-img" src="https://media.giphy.com/media/137lrBiTouTXhe/giphy.gif" alt="pg">
+          <p>University of Warwick </p>
+          <p>MSc in Computer Science</p>
+        </div>
+      </div>
+
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
         <h3>Love Sketching and Web Designing?</h3>
         <p class="conmsg">Lets talk about how we can make amazing things using sketch, web design and coding  over a cup of coffee! &#9749;</p>
-        <a class="btn" href="mailto:nagtamaghna@gmail.com">CONTACT ME</a>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdbGdkwhQW2z3DAk46oAUWUofN8PCBg4u0EiiX62CQjo0a5GQ/viewform?usp=sf_link">CONTACT ME</a>
       </div>
     </div>
 
@@ -55,8 +87,12 @@
       <a class="footer-link" href="https://www.linkedin.com/in/tamaghna-nag-100861160/"><i class="fab fa-linkedin">LinkedIn</i></a>
       <a class="footer-link" href="twitter.com/NagTamaghna"><i class="fab fa-twitter-square">Twitter</i></a>
       <a class="footer-link" href="https://tamaghnatech.github.io/CV/"><i class="fab fa-github">Github</i></a>
-      <p class="lolo">© 2020  Tamaghna Nag.</p>
+      <p class="lolo">© 2023  Tamaghna Nag.</p>
     </div>
-
+    <script>
+        document.querySelector('.animated-mountain').addEventListener('load', function() {
+          this.classList.add('animated-mountain');
+        });
+    </script>
   </body>
 </html>

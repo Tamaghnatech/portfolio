@@ -26,7 +26,13 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   color: #11999e;
 }
+.profile img{
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px grey;
+  opacity: 0.9;
 
+}
 hr{
   border: dotted #eaf6f6 6px;
   border-bottom: none;
@@ -48,6 +54,12 @@ div {
 
 }
 .skill-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align: left;
+
+}
+.bio-row{
     width:50%;
     margin:100px auto 100px auto;
     text-align: left;
